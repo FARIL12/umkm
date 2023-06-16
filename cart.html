@@ -1,0 +1,80 @@
+<!-- cart.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Store - Cart</title>
+  <link rel="stylesheet" type="text/css" href="jb.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search">
+        <button class="search-button">Search</button>
+      </div>
+      <div class="cart">
+        <a href="checkout.html" class="cart-icon"><img src="cart-icon.png" alt="Cart"></a>
+        <span class="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-items">
+      <h2>Cart</h2>
+      <div class="cart-item">
+        <div class="item-details">
+          <img src="product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+        </div>
+        <div class="item-price">
+          <p class="price">$10</p>
+          <input type="number" min="1" value="1">
+          <button class="remove-button">Remove</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <div class="item-details">
+          <img src="product2.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+        </div>
+        <div class="item-price">
+          <p class="price">$20</p>
+          <input type="number" min="1" value="1">
+          <button class="remove-button">Remove</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <div class="item-details">
+          <img src="product3.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+        </div>
+        <div class="item-price">
+          <p class="price">$30</p>
+          <input type="number" min="1" value="1">
+          <button class="remove-button">Remove</button>
+        </div>
+      </div>
+    </section>
+    <section class="checkout">
+      <h2>Checkout</h2>
+      <div class="subtotal">
+        <p>Subtotal:</p>
+        <p class="subtotal-price">$0</p>
+      </div>
+      <div class="total">
+        <p>Total:</p>
+        <p class="total-price">$0</p>
+      </div>
+      <button class="checkout-button">Proceed to Checkout</button>
+    </section>
+  </main>
+
+  <script src="jb.js"></script>
+</body>
+</html>
