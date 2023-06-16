@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="jb.css">
+</head>
+<body>
+  <h4>Checkout Pemesanan</h4>
+  
+  <div class="shipping-info">
+    <h2></h2>
+    <div class="form-group">
+      <label for="shipping-address">Shipping Address</label>
+      <input type="text" id="shipping-address" placeholder="Enter your shipping address">
+    </div>
+    <div class="form-group">
+      <label for="shipping-method">Shipping Method</label>
+      <select id="shipping-method">
+        <option value="Standard">JNE</option>
+        <option value="Express">TIKI</option>
+        <option value="Same Day">J&T</option>
+        <option value="Same Day">WAHANA</option>
+        <option value="Same Day">LION EXPRES</option>
+        <option value="Same Day">SI CEPAT</option>
+      </select>
+    </div>
+  </div>
+ <!-- Formulir pilihan kabupaten dan kecamatan -->
+ <div>
+  <label for="shipping-district">Kabupaten:</label>
+  <select id="shipping-district">
+    <option value="jakarta">Jakarta</option>
+    <option value="bandung">Bandung</option>
+    <option value="surabaya">Surabaya</option>
+    <!-- Tambahkan opsi kabupaten lainnya -->
+  </select>
+</div>
+
+<div>
+  <label for="shipping-subdistrict">Kecamatan:</label>
+  <select id="shipping-subdistrict">
+    <!-- Opsi kecamatan akan ditambahkan melalui JavaScript -->
+  </select>
+</div>
+
+<!-- ... kode HTML lainnya ... -->
+
+    <!-- ... kode HTML lainnya ... -->
+
+    
+  
+  <div class="checkout-items">
+    <!-- List of checkout items -->
+  </div>
+
+  <div class="shipping-summary">
+    <h2>Shipping Summary</h2>
+    <div class="summary-card">
+      <h3>Product Total</h3>
+      <p class="product-total-price">$0</p>
+    </div>
+    <div class="summary-card">
+      <h3>Shipping Total</h3>
+      <p class="shipping-total-price">$0</p>
+    </div>
+    <div class="summary-card">
+      <h3>Total Price</h3>
+      <p class="total-price">$0</p>
+    </div>
+  </div>
+
+  <div class="checkout-actions">
+    <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=I%20want%20to%20make%20a%20purchase" target="_blank" class="whatsapp-link">Beli via WhatsApp</a>
+  </div>
+
+  <script src="jb.js"></script>
+</body>
+</html>
